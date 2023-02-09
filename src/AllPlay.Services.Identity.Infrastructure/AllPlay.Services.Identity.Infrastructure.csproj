@@ -7,7 +7,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="DAL" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Consul\Messier.Consul.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Logging.Serilog\Messier.Logging.Serilog.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Messaging.RabbitMQ\Messier.Messaging.RabbitMQ.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Metrics.Prometheus\Messier.Metrics.Prometheus.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Observability.Jaeger\Messier.Observability.Jaeger.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Postgres\Messier.Postgres.csproj" />
     </ItemGroup>
 
 </Project>

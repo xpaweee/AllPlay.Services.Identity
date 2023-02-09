@@ -6,4 +6,22 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Consul\Messier.Consul.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Logging.Serilog\Messier.Logging.Serilog.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Messaging.RabbitMQ\Messier.Messaging.RabbitMQ.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Metrics.Prometheus\Messier.Metrics.Prometheus.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier.Observability.Jaeger\Messier.Observability.Jaeger.csproj" />
+      <ProjectReference Include="..\..\..\Messier\src\Messier\Messier.csproj" />
+      <ProjectReference Include="..\AllPlay.Services.Identity.Infrastructure\AllPlay.Services.Identity.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    </ItemGroup>
+
 </Project>
